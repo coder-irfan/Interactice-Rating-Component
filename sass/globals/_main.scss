@@ -1,0 +1,145 @@
+@use "function" as x;
+
+.main1 {
+    background-color: $grey-900; 
+    padding: x.rem(23);
+    border-radius: x.rem(10);
+
+    @include breakpoint("medium") {
+        padding: x.rem(32);
+        border-radius: x.rem(20);
+        max-width: x.rem(412);
+    }
+
+    & img {
+        background-color: $light-grey;
+        padding: x.rem(8);
+        padding-bottom: x.rem(9);
+        border-radius: 50%;
+    }
+
+    & h1 {
+        color: $white;
+        margin: x.rem(13) 0 x.rem(15);
+        font-size: x.rem(23);
+
+        @include breakpoint("medium") {
+            margin: x.rem(30) 0 x.rem(10);
+        }
+    }
+
+    & p {
+        color: $grey-500;
+        margin-bottom: x.rem(16);
+    }
+
+    & ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        margin-bottom: x.rem(26);
+
+        & button {
+            font-family: inherit;
+            width: x.rem(41);
+            height: x.rem(41);
+            border-radius: 50%;
+            border: none;
+            background-color: $light-grey;
+            color: $white;
+            cursor: pointer;
+            transition: .3s;
+
+            @include breakpoint("medium") {
+                width: x.rem(50);
+                height: x.rem(50);
+            }
+
+            &:hover {
+                background-color: $orange;
+            }
+
+            &:focus {
+                background-color: $grey-500;
+            }
+        }
+    }
+
+    &__button {
+        font-family: inherit;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: x.rem(2);
+        background-color: $orange;
+        width: 100%;
+        padding: x.rem(10) x.rem(7);
+        border-radius: x.rem(20);
+        border: none;
+        transition: .3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $white;
+            color: $orange;
+        }
+    }
+}
+
+.main2 {
+    background-color: $grey-900;
+    border-radius: x.rem(10);
+    padding: x.rem(35) x.rem(23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @include breakpoint("medium") {
+        border-radius: x.rem(20);
+        max-width: x.rem(412);
+    }
+
+    & img {
+        width: x.rem(145);
+        display: block;
+        margin: 0 auto x.rem(24);
+
+        @include breakpoint("medium") {
+            width: x.rem(165);
+        }
+    }
+
+    &__grey {
+        background-color: $light-grey;
+        color: $orange;
+        border-radius: x.rem(30);
+        padding: x.rem(7) x.rem(15);
+        font-size: x.rem(16);
+        margin-bottom: x.rem(28);
+    }
+
+    & h2 {
+        color: $white;
+        margin-bottom: x.rem(16);
+
+        @include breakpoint("medium") {
+            font-size: x.rem(26);
+        }
+    }
+
+    &__paragraph {
+        font-size: x.rem(14);
+        color: $grey-500;
+
+        @include breakpoint("medium") {
+            font-size: $font-size;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
