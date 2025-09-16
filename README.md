@@ -4,7 +4,7 @@ This is a solution to the [Frontend Mentor - Interactive Rating Component Challe
 
 ## 🔗 Live Demo
 
-➡️ [Click here to view the live site](https://mohammad-irfan-noorzada.github.io/Interactice-Rating-Component/)
+➡️ [Click here to view the live site](https://coder-irfan.github.io/Interactice-Rating-Component/)
 
 ## 🛠️ Built With
 
